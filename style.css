@@ -66,7 +66,7 @@ body {
 h1 {
   padding-top: 24px;
   color: #1b1c21;
-  font-family: TTLakes;
+  font-family: "TTLakes";
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -82,7 +82,7 @@ h1 {
 .main__nav > .main__nav_item {
   white-space: nowrap;
   color: #7e7e82;
-  font-family: TTLakes;
+  font-family: "TTLakes";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -98,7 +98,7 @@ h1 {
 }
 .main__text {
   color: #1b1c21;
-  font-family: TTLakes;
+  font-family: "TTLakes";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -110,7 +110,7 @@ h1 {
   border: none;
   padding: 16px 0;
   color: #1b1c21;
-  font-family: TTLakes;
+  font-family: "TTLakes";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -145,10 +145,6 @@ h1 {
   .main__nav {
     display: flex;
     flex-wrap: wrap;
-    overflow-x:hidden;
-  }
-  .main__img {
-    /* margin-bottom: 24px; */
   }
 }
 @media (max-width: 1920px) {
@@ -179,7 +175,7 @@ h1 {
     color: #1B1C21;
     width: 125px;
   text-align: right;
-  font-family: TTLakes;
+  font-family: "TTLakes";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -195,7 +191,7 @@ h1 {
      color: #1B1C21;
      width: 125px;
    text-align: right;
-   font-family: TTLakes;
+   font-family: "TTLakes";
    font-size: 16px;
    font-style: normal;
    font-weight: 500;
@@ -230,7 +226,7 @@ h1 {
   .section__group_item-title {
     padding-top: 50px;
     color: #1b1c21;
-    font-family: TTLakes;
+    font-family: "TTLakes";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -257,6 +253,13 @@ h1 {
   }
   .main__text_item {
     min-width: 100px;
+    color: rgb(27, 28, 33);
+    font-family: "TTLakes";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-align: left;
   }
   .main__img {
     display: flex;
@@ -298,8 +301,10 @@ h1 {
   }
   .main__img {
     display: block;
+    width: 360px;
     max-width: 100%;
     border-radius: 10px;
+    margin-left: 48px;
   }
   .img {
     display: none;
