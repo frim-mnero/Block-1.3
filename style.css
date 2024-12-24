@@ -145,6 +145,7 @@ h1 {
   .main__nav {
     display: flex;
     flex-wrap: wrap;
+      overflow:hidden;
   }
   .main__img {
     /* margin-bottom: 24px; */
