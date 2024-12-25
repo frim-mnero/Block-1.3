@@ -1,7 +1,6 @@
 @font-face {
     font-family: "TTLakes";
-    src: url(.Sources/TTLakes/TTLakes-Regular.woff) format(“woff”);
-    
+    src: url(./Sources/TTLakes/TTLakes-Regular.woff) format("woff");
     font-style: normal;
   }
 * {
@@ -10,9 +9,8 @@
   box-sizing: border-box;
 }
 body {
-    width: 100%;
-    font-family: "TTLakes", sans-serif;
-
+  width: 100%;
+  
 }
 .header {
   display: flex;
