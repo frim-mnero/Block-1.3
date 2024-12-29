@@ -10,75 +10,70 @@
 }
 body {
   width: 100%;
+}
+.btn{
+  border-radius: 20px;
+  background: rgb(255, 62, 121);
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.header{
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
+  height: 88px;
+  border-bottom: 1px solid rgb(217, 255, 245);;
+}
+.container{
+  padding: 0 16px;
   
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 16px 16px;
-}
-.header__left {
-  display: flex;
-}
-
-.header__right {
-  display: flex;
-}
-.header__rigth_group-left {
+.header__left,
+.header__right_group,
+.header__right_group-right,
+.header__right_group-right--item{
   display: flex;
   gap: 16px;
+  align-items: center;
 }
-.header__right_group-right {
-  display: flex;
-  gap: 16px;
-  position: relative;
-}
-
-.header__right_group-right::before {
-  content: "";
+.devider{
+  border-radius: 1px;
+  background: rgb(234, 234, 234);
   width: 2px;
   height: 32px;
-  border-radius: 1px;
-  background: #eaeaea;
+}
+.main{
+  background: rgb(248, 248, 248);
+}
+.main__info{
+  position: relative;
+}
+.main__info_highlite{
   position: absolute;
-  top: 12px;
-  left: -20px;
 }
-
-.item {
-  background-color: inherit;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.logo {
-   margin-left: 16px;
- 
-}
-.main {
-  background: #f8f8f8;
-  padding: 0 16px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 24px;
-}
-h1 {
-  padding-top: 24px;
-  color: #1b1c21;
-  font-family: "TTLakes";
+.main__info_title{
+  color: rgb(27, 28, 33);
+  font-family: TTLakes;
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 142.857% */
+  line-height: 40px;
   letter-spacing: -0.6px;
+  text-align: left;
+  padding: 24px 0;
 }
-.main__nav {
+.main__group{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.main__nav{
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
-  
 }
 .main__nav > .main__nav_item {
   white-space: nowrap;
@@ -91,255 +86,224 @@ h1 {
   letter-spacing: -0.2px;
   text-decoration: none;
   padding: 8px 10px 8px 16px;
-  margin-left: 24px;
 }
-.main__nav_item:hover {
-  border-radius: 6px;
-  border: 2px solid #b8ffec;
-}
-.main__text {
-  color: #1b1c21;
-  font-family: "TTLakes";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px; /* 128.571% */
-  letter-spacing: 0.2px;
-}
-.main__text_readMore {
-  background-color: #f8f8f8;
+.main__nav_item{
+  box-sizing: border-box;
   border: none;
-  padding: 16px 0;
-  color: #1b1c21;
-  font-family: "TTLakes";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: -0.2px;
+  border-radius: 6px;
+  border: 2px solid rgba(184, 255, 236, 0);
+ 
 }
-.main__text_readMore::before {
-  content: url(./Sources/img/icons/ic_expand.png);
-  position: relative;
-  top: 5px;
-  display: inline-block;
+.main__nav_item:hover{
+  border: 2px solid rgb(184, 255, 236);
+  background: rgb(255, 255, 255);
 }
-.main__img {
-  padding-left: 0;
+.main__information_text p{
+  color: rgb(27, 28, 33);
+  font-family: TTLakes;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-align: left;
 }
-.section {
-  display: none;
-}
-
-.section__group_item-button{
-  background-color:inherit;
-  border: none; 
-  margin: 0;
-  padding: 0;
-  
-}
-.section__group{
+.main__information_expand{
   display: flex;
-  gap: 42px;
+  gap: 8px;
+  align-items: center;
 }
-@media (min-width: 1120px) {
-  .main__nav {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 1920px) {
-  .main {
-    height: 535px;
-  }
-  .main__title {
-    display: none;
-  }
-  .section__title {
-    display: inline;
-  padding-top: 42px;  }
-
-  .header {
-    display: none;
-  }
-  .section__title {
-    padding: 0;
-  }
-  .section__group_item-button{
-    padding-top: 42px;
-  }
-  .application:before{
-    content: 'Оставить заявку';
-   position: relative;
-   bottom: 14px;
-   margin-right: 8px;
-    color: #1B1C21;
-    width: 125px;
-  text-align: right;
-  font-family: "TTLakes";
+.main__information_expand p{
+  color: rgb(27, 28, 33);
+  font-family: TTLakes;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: -0.2px;
+  text-align: left;
+}
+.main__information_expand{
+  cursor: pointer;
+}
+/* медиа стили */
+@media (min-width:1120px) {
+  .header{
+    display: none;
   }
-
-  .status-repair::before{
-    content: 'Статус ремонта';
-    position: relative;
-    bottom: 14px;
-    margin-right: 8px;
-     color: #1B1C21;
-     width: 125px;
-   text-align: right;
-   font-family: "TTLakes";
-   font-size: 16px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 24px; /* 150% */
-   letter-spacing: -0.2px;
+  .main{
+    padding: 0 34px;
   }
-  .section__title:before,
-  .main__title::before {
-    content: url(./Sources/img/highlight.png);
-    display: inline-block;
-    
-    vertical-align: middle;
-    position: absolute;
-    left: 0;
+  .main__info_highlite{
+    left: -34px;
+    top: 24px;
   }
-  .section {
+  .main__icons{
+    align-self: center;
     display: flex;
-    justify-content: space-between;
-    padding: 0 32px 0 32px;
-    margin: 0;
-  }
-  .section__group,
-  .section__group_item {
-    display: flex;
-  }
-  .section__group {
+    flex-wrap: nowrap;
     gap: 32px;
   }
-  .section__group_item {
+  .main__icons_button{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .main__icons_item{
+    display: flex;
+    align-items: center;
     gap: 8px;
   }
-  .section__group_item-title {
-    padding-top: 50px;
-    color: #1b1c21;
-    font-family: "TTLakes";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: -0.2px;
-  }
-  .section__group_item-link,
-  .section__title {
-    padding-top: 42px;
-  }
-  .main__group_main {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .main__text {
-    display: inline-block;
-    width: 490px;
-    max-height: 160px;
-  }
-  .header__rigth_group-left {
-    display: flex;
-    margin-right: 42px;
-  }
-  .main__text_item {
-    min-width: 100px;
+  .main__icons_text{
     color: rgb(27, 28, 33);
-    font-family: "TTLakes";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    text-align: left;
+  font-family: TTLakes;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: right;
   }
-  .main__img {
+  .main__nav{
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .main__information_text{
+    max-width: 490px;
+    max-height: 160px;
+    overflow: hidden;
+  }
+  .main__information_expand{
+    margin-top: 14px;
+  }
+  .main__information_image-mobile{
+    display: none;
+  }
+  .main__information{
     display: flex;
-    width: 535px;
-    margin-right: 32px;
+    justify-content: space-between;
+  
   }
-  .img {
+  .main__information_image-tablet{
+   width: 400px;
+   margin-right: 34px;
+  }
+}
+@media(max-width:1119px){
+  .header{
+    padding: 0 32px;
+    justify-content: space-between;
+  }
+  .main__info_title{
+    padding-top: 42px;
+    padding-bottom: 8px;
+  }
+  .main{
+    width: 100%;
+    padding: 0 32px;
+  }
+  
+  .main__info_highlite{
+    left: -32px;
+    top: 42px;
+  }
+  .main__icons{
+    display: none;
+  }
+  .main__information{
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .main__information_image-mobile{
     display: none;
   }
 }
-@media (max-width: 1119px) {
-  .section {
+@media(max-width:768px){
+  .header{
+    padding: 0 24px;
+  }
+  .header{
+    justify-content: space-between;
+  }
+  .header-devider-afterLogo{
     display: none;
   }
-  .section__title {
-    display: inline;
+  .header-devider-afterProfile{
+    margin: 0 4px;
   }
-  .header {
+  .header__right_group-right,
+  .header__right_group-left{
+    display: flex;
+    gap: 16px;
+  }
+  .main{
+    padding: 0 24px;
+  }
+  .main__info_highlite{
+    left: -24px;
+    top: 42px;
+  }
+  .main__nav{
+    padding-bottom:32px;
+  }
+  .main__information{
     display: flex;
   }
-  .main {
-    padding-left: 24px;
+  .main__information_text{
+    max-width: 312px;
+    max-height: 160px;
+    overflow: hidden;
   }
-  .main__title {
-    display: inline;
+  .main__information_expand{
+    margin-top: 10px;
   }
-  .main__group_main {
-    display: flex;
-    justify-content: space-around;
+  .main__information_image-mobile{
+    display: none;
   }
-
-  .main__text {
+  .main__information_image-tablet{
     display: inline-block;
-    width: 312px;
-  }
-  .header__rigth_group-left {
-    display: flex;
-    margin-right: 42px;
-  }
-  .main__img {
-    display: block;
-    width: 360px;
-    max-width: 100%;
-    border-radius: 10px;
-    margin-left: 48px;
-  }
-  .img {
-    display: none;
   }
 }
-
-@media (max-width: 767px) {
-  body {
-    height: 100%;
+@media(max-width:320px){
+  .header{
+    justify-content: space-between;
+    padding: 0 16px;
   }
-  .header {
-    display: flex;
-  }
-
-  .main {
-    height: 100%;
-  }
-  .main__nav {
-    padding: 24px 0;
-  }
-  .main__text {
-    width: 100%;
-  }
-
-  .header__rigth_group-left {
+  .header__right_group-left{
     display: none;
   }
-  .img {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
+  .header-devider--beforeLogo,
+  .header-devider-afterProfile{
+    display: none;
+  }
+  .header-devider-afterLogo{
+    margin-right: 16px;
+  }
+  .main{
+    padding: 0 16px;
+  }
+  .main__info_highlite{
+    position: absolute;
+    left: -16px;
+    top:42px;
+  }
+  .main__nav{
+    padding-bottom:24px;
+  }
+  .main__information_text{
+    max-width: 288px;
+    max-height: 90px;
+    overflow: hidden;
+  }
+  .main__information_expand{
     margin-top: 16px;
   }
-  .main__img {
+  .main__information_image-mobile{
+    display: inline-block;
+    margin-top: 16px;
+    position: relative;
+    left: -16px;
+    width: 320px;
+  }
+  .main__information_image-tablet{
     display: none;
   }
 }
